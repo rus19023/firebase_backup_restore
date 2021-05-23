@@ -2,13 +2,19 @@
 
 A flutter plugin for backup and restoring firebase cloud documents.
 
-![Sample Use](flutter_currency_converter/assets/rsz_simulator_screen_shot_-_iphone_11_pro_max_-_2020-08-08_at_154657.png)
-
-## Getting Started
-
-## Register your apps with firebase.
+## Register with firebase
+ - add firebase_core and cloud_firestore dependencies.
  - for android - Add google-services.json to your android/app folder.
  - for ios - Add GoogleService-info.plist to your ios/Runner folder.
+
+ - Initialize firebase
+```dart
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+  runApp(MyApp());
+}
+```
 
 ## Installation
  - Pub get
@@ -22,16 +28,7 @@ import 'package:firebase_backup_restore/results.dart';
 import 'package:firebase_backup_restore/firebase_backup_restore.dart';
 ```
 
- - Init firebase
-```dart
-void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
-  runApp(MyApp());
-}
-```
-
- - Init firebase collection list
+ - Initialize firestore collection list
 ```dart
 FirebaseBackupRestore().collections = ['posts', 'users'];
 ```
