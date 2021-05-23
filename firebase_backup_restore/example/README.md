@@ -1,16 +1,59 @@
-# firebase_backup_restore_example
+# firebase_backup_restore
 
-Demonstrates how to use the firebase_backup_restore plugin.
+A flutter plugin for backup and restoring firebase cloud documents.
 
-## Getting Started
+## Register with firebase
+ - add firebase_core and cloud_firestore dependencies.
+ - for android - Add google-services.json to your android/app folder.
+ - for ios - Add GoogleService-info.plist to your ios/Runner folder.
 
-This project is a starting point for a Flutter application.
+ - Initialize firebase
+```dart
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+  runApp(MyApp());
+}
+```
 
-A few resources to get you started if this is your first Flutter project:
+## Installation
+ - Pub get
+```dart
+firebase_backup_restore: ^0.0.1
+```
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+ - Import
+```dart
+import 'package:firebase_backup_restore/results.dart';
+import 'package:firebase_backup_restore/firebase_backup_restore.dart';
+```
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+ - Initialize firestore collection list
+```dart
+FirebaseBackupRestore().collections = ['posts', 'users'];
+```
+
+## Using
+ - Backup All
+```dart
+await FirebaseBackupRestore().backupAll();
+```
+
+ - Restore All
+```dart
+await FirebaseBackupRestore().restoreAll();
+```
+
+ - Backup specific document
+```dart
+await FirebaseBackupRestore().backup(collectionId: "users");
+```
+
+ - Restore specific document
+```dart
+await FirebaseBackupRestore().restore(collectionId: "users");
+```
+
+## Authors
+
+* [ShehanRashmika](https://github.com/ShehanRashmika)
