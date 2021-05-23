@@ -72,7 +72,7 @@ class FirebaseBackupRestore {
   }
 
   //to backup specific collection
-  Future<BackUpResult> backup({@required String collectionId}) async {
+  Future<BackUpResult> backup({required String collectionId}) async {
     /*
     backup json file automatically save on the disk.
     and return the file object and content.
@@ -120,7 +120,7 @@ class FirebaseBackupRestore {
 
   //to restore specific collection
   Future<RestoreResult> restore(
-      {@required String collectionId, String content}) async {
+      {required String collectionId, String? content}) async {
     /*
     if content is not provided plugin try to find specific backup file.
     if there is no matching backup file, this return an error.

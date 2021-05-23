@@ -30,7 +30,7 @@ import 'package:firebase_backup_restore/firebase_backup_restore.dart';
 
  - Initialize firestore collection list
 ```dart
-FirebaseBackupRestore().collections = ['posts', 'users'];
+FirebaseBackupRestore().collections = ['posts', 'users',];
 ```
 
 ## Using
