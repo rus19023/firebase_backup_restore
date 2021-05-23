@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "958869765142",
+    "project_id": "fir-backup-plugin",
+    "storage_bucket": "fir-backup-plugin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:958869765142:android:90ac11b851780567f7c937",
+        "android_client_info": {
+          "package_name": "com.zeesha.sheha.firebase_backup_restore_example"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "958869765142-aind2o02mhnoj53nn7p0bttmp5dkrb3c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.zeesha.sheha.firebase_backup_restore_example",
+            "certificate_hash": "c0019a50820fa9b8a5301016bfcf12f9b4b5bf32"
+          }
+        },
+        {
+          "client_id": "958869765142-2fpjfip1a9emr3165grfs5qutt8op6od.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCL_EEpCEqtrCUogUpVUrer_Dvnh9rCSCc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "958869765142-2fpjfip1a9emr3165grfs5qutt8op6od.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
