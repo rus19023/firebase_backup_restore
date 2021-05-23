@@ -6,9 +6,9 @@ A flutter plugin for backup and restoring firebase cloud documents.
 
 ## Getting Started
 
-# Register your apps with firebase.
-for android - Add google-services.json to your android/app folder.
-for ios - Add GoogleService-info.plist to your ios/Runner/ folder.
+## Register your apps with firebase.
+ - for android - Add google-services.json to your android/app folder.
+ - for ios - Add GoogleService-info.plist to your ios/Runner folder.
 
 ## Installation
  - Pub get
