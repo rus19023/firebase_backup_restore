@@ -1,7 +1,6 @@
 name: firebase_backup_restore
 description: Flutter plugin for backup and restoring documents in cloud firestore
 version: 0.0.1
-author: Shehan Rashmika
 homepage: https://github.com/ShehanRashmika/firebase_backup_restore
 
 environment:
